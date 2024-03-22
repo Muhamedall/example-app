@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Airport>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\airport>
  */
 class AirportFactory extends Factory
 {
@@ -17,10 +17,8 @@ class AirportFactory extends Factory
     public function definition()
     {
         return [
-           
             'iata'=>fake()->name(),
             'icao'=>fake()->name(),
-            'libelle'=>fake()->title()
         ];
     }
 }

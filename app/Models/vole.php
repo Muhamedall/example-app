@@ -5,12 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Avions extends Model
+class vole extends Model
 {
     use HasFactory;
-    //
-    protected $fillable=[
-        'libelle',
-        'capacite',
-    ];
+    public function airportDepart()
+    {
+        return $this->belongsTo(Airport::class,'airport-depart-id');
+    }
 }

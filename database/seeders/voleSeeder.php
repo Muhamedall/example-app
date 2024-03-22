@@ -1,11 +1,12 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\Voles;
+
+use App\Models\vole;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class VoleSeddr extends Seeder
+class voleSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +15,6 @@ class VoleSeddr extends Seeder
      */
     public function run()
     {
-       Voles::factory(10)->create();
+        vole::factory(20)->create();
     }
 }
